@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button toastButton;
+    Button Clicky;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
