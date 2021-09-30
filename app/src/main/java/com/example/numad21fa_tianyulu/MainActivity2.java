@@ -52,7 +52,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view2.setText("Pressed: A");
+                    view2.setText("Pressed: B");
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     view2.setText("Pressed: -");
@@ -65,7 +65,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view2.setText("Pressed: A");
+                    view2.setText("Pressed: C");
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     view2.setText("Pressed: -");
@@ -78,7 +78,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view2.setText("Pressed: A");
+                    view2.setText("Pressed: D");
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     view2.setText("Pressed: -");
@@ -86,12 +86,12 @@ public class MainActivity2 extends AppCompatActivity {
                 return false;
             }
         });
-        
+
         btnE.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view2.setText("Pressed: A");
+                    view2.setText("Pressed: E");
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     view2.setText("Pressed: -");
@@ -104,7 +104,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view2.setText("Pressed: A");
+                    view2.setText("Pressed: F");
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     view2.setText("Pressed: -");
