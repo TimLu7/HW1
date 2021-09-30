@@ -48,7 +48,72 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        btnB.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    view2.setText("Pressed: A");
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    view2.setText("Pressed: -");
+                }
+                return false;
+            }
+        });
+
+        btnC.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    view2.setText("Pressed: A");
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    view2.setText("Pressed: -");
+                }
+                return false;
+            }
+        });
+
+        btnD.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    view2.setText("Pressed: A");
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    view2.setText("Pressed: -");
+                }
+                return false;
+            }
+        });
         
+        btnE.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    view2.setText("Pressed: A");
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    view2.setText("Pressed: -");
+                }
+                return false;
+            }
+        });
+
+        btnF.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    view2.setText("Pressed: A");
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    view2.setText("Pressed: -");
+                }
+                return false;
+            }
+        });
+
+
 
 
 
