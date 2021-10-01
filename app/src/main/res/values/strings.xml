@@ -7,4 +7,7 @@
     <string name="e">E</string>
     <string name="f">F</string>
     <string name="textview">TextView</string>
+    <string name="clicky_clicky">Clicky Clicky</string>
+    <string name="about_me">About Me</string>
+    <string name="link_controller">Link Controller</string>
 </resources>
