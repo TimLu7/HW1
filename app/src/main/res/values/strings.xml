@@ -10,4 +10,9 @@
     <string name="clicky_clicky">Clicky Clicky</string>
     <string name="about_me">About Me</string>
     <string name="link_controller">Link Controller</string>
+    <string name="desc" />
+    <string name="name">Name:</string>
+    <string name="url">URL:</string>
+    <string name="detail">Please enter a valid url.</string>
+
 </resources>
