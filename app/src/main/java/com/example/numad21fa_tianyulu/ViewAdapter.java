@@ -31,8 +31,8 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder linkCollectorViewHolder, int position) {
         LinkUnit currentLinkItem = linkUnitList.get(position);
-        linkCollectorViewHolder.linkName.setText(currentLinkItem.getLinkName());
-        linkCollectorViewHolder.linkUrl.setText(currentLinkItem.getLinkUrl());
+        linkCollectorViewHolder.Name.setText(currentLinkItem.getLinkName());
+        linkCollectorViewHolder.Url.setText(currentLinkItem.getLinkUrl());
     }
 
     @Override

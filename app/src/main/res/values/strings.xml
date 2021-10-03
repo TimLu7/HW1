@@ -10,9 +10,16 @@
     <string name="clicky_clicky">Clicky Clicky</string>
     <string name="about_me">About Me</string>
     <string name="link_controller">Link Controller</string>
-    <string name="desc" />
+    <string name="descend"/>
     <string name="name">Name:</string>
     <string name="url">URL:</string>
     <string name="detail">Please enter a valid url.</string>
+    <string name="add_success">Link added</string>
+    <string name="link_invalid">"Invalid url "</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Add">Add</string>
+    <string name="Http">http://</string>
+    <string name="NameValuePair">Name: %1$s</string>
+    <string name="UrlValuePair">Url: %1$s</string>
 
 </resources>
