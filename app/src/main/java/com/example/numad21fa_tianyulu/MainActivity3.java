@@ -38,7 +38,7 @@ public class MainActivity3 extends AppCompatActivity {
         //for landscape screen
         init(savedInstanceState);
 
-        FloatingActionButton addLinkButton = findViewById(R.id.addLinkButton);
+        FloatingActionButton addLinkButton = findViewById(R.id.LinkButton);
 
         addLinkButton.setOnClickListener(v -> addLink());
 
@@ -62,8 +62,11 @@ public class MainActivity3 extends AppCompatActivity {
         });
         itemTouchHelper.attachToRecyclerView(recyclerView);
     }
+
+
         @Override
         protected void onSaveInstanceState(@NonNull Bundle outState) {
+
             int size = linkUnitList == null? 0 : linkUnitList.size();
             outState.putInt(NUMBER_OF_ITEMS, size);
 
