@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button toastButton;
     private Button clickyBtn;
     private Button linkBtn;
+    private Button locatorBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         linkBtn = findViewById(R.id.button9);
 
+        locatorBtn = findViewById(R.id.locator);
+
         toastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,16 +38,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
         clickyBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this,MainActivity2.class);
-            startActivity(intent);
+            Intent intent1 = new Intent(this,MainActivity2.class);
+            startActivity(intent1);
         });
 
         linkBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this,MainActivity3.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(this,MainActivity3.class);
+            startActivity(intent2);
         });
 
-
+        locatorBtn.setOnClickListener(v ->{
+            Intent intent3 = new Intent(this,Locator.class);
+            startActivity(intent3);
+        });
 
     }
 }

@@ -41,4 +41,6 @@ public class LinkUnit {
         }
         return Patterns.WEB_URL.matcher(linkUrl).matches();
     }
+
+
 }

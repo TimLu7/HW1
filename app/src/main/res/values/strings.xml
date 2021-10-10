@@ -21,5 +21,6 @@
     <string name="Http">http://</string>
     <string name="NameValuePair">Name: %1$s</string>
     <string name="UrlValuePair">Url: %1$s</string>
+    <string name="locator">LOCATOR</string>
 
 </resources>

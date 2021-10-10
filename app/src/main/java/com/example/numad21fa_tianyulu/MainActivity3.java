@@ -20,10 +20,10 @@ public class MainActivity3 extends AppCompatActivity {
     private ArrayList<LinkUnit> linkUnitList;
     private AlertDialog inputAlertDialog;
 
-    private EditText linkNameInput;
+    private EditText NameInput, UrlInput;
     private RecyclerView recyclerView;
     private ViewAdapter ViewAdapter;
-    private EditText linkUrlInput;
+
 
     private static final String KEY_OF_INSTANCE = "KEY_OF_INSTANCE";
     private static final String NUMBER_OF_ITEMS = "NUMBER_OF_ITEMS";
@@ -107,8 +107,8 @@ public class MainActivity3 extends AppCompatActivity {
             LayoutInflater layoutInflater = LayoutInflater.from(this);
             View view = layoutInflater.inflate(R.layout.user_input, null);
 
-            linkNameInput = view.findViewById(R.id.link_name_input);
-            linkUrlInput = view.findViewById(R.id.link_url_input);
+            NameInput = view.findViewById(R.id.link_name_input);
+            UrlInput = view.findViewById(R.id.link_url_input);
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setView(view);
@@ -117,8 +117,9 @@ public class MainActivity3 extends AppCompatActivity {
                     .setCancelable(false)
                     .setPositiveButton(getString(R.string.Add),
                             (dialog, id) -> {
-                                LinkUnit linkUnit = new LinkUnit(linkNameInput.getText().toString(), linkUrlInput.getText().toString());
+                                LinkUnit linkUnit = new LinkUnit(NameInput.getText().toString(), UrlInput.getText().toString());
                                 if (linkUnit.isValid()) {
+
                                     linkUnitList.add(0, linkUnit);
                                     ViewAdapter.notifyDataSetChanged();
                                     Snackbar.make(recyclerView, getString(R.string.add_success), Snackbar.LENGTH_LONG).show();
@@ -144,9 +145,9 @@ public class MainActivity3 extends AppCompatActivity {
 
 
         private void addLink() {
-            linkNameInput.getText().clear();
-            linkUrlInput.setText(getString(R.string.Http));
-            linkNameInput.requestFocus();
+            NameInput.getText().clear();
+            UrlInput.setText(getString(R.string.Http));
+            NameInput.requestFocus();
             inputAlertDialog.show();
         }
 
