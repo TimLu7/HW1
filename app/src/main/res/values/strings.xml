@@ -22,5 +22,7 @@
     <string name="NameValuePair">Name: %1$s</string>
     <string name="UrlValuePair">Url: %1$s</string>
     <string name="locator">LOCATOR</string>
+    <string name="btnGetLocation">Location</string>
+    <string name="textViewLoc">Press the Location button to get location</string>
 
 </resources>
