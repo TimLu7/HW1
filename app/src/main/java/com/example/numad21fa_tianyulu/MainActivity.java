@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         linkBtn = findViewById(R.id.button9);
 
-        locatorBtn = findViewById(R.id.locator);
+        locatorBtn = findViewById(R.id.locatorBtn);
 
         toastButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,18 +38,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         clickyBtn.setOnClickListener(v -> {
-            Intent intent1 = new Intent(this,MainActivity2.class);
-            startActivity(intent1);
+            Intent intent = new Intent(this,MainActivity2.class);
+            startActivity(intent);
         });
 
         linkBtn.setOnClickListener(v -> {
-            Intent intent2 = new Intent(this,MainActivity3.class);
-            startActivity(intent2);
+            Intent intent = new Intent(this,MainActivity3.class);
+            startActivity(intent);
         });
 
-        locatorBtn.setOnClickListener(v ->{
-            Intent intent3 = new Intent(this,Locator.class);
-            startActivity(intent3);
+        locatorBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this,Locator.class);
+            startActivity(intent);
         });
 
     }

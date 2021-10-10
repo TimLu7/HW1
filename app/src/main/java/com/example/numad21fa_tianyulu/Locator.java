@@ -32,7 +32,7 @@ public class Locator extends AppCompatActivity {
 
         boolean isProviderEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         if (!isProviderEnabled) {
-            Snackbar.make(view, loadGPS, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+            Snackbar.make(view, enableGPS, Snackbar.LENGTH_LONG).setAction("Action", null).show();
         } else {
             getUserLocation();
         }
@@ -40,6 +40,7 @@ public class Locator extends AppCompatActivity {
     }
 
     private void getUserLocation() {
+
         TextView textViewLocator = findViewById(R.id.textView_locator);
         if (ActivityCompat.checkSelfPermission(Locator.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             textViewLocator.setText(getResources().getString(R.string.Location_access_denied));
@@ -70,6 +71,5 @@ public class Locator extends AppCompatActivity {
         }
     }
 
-
-
 }
+
