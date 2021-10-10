@@ -24,5 +24,6 @@
     <string name="locator">LOCATOR</string>
     <string name="btnGetLocation">Location</string>
     <string name="textViewLoc">Press the Location button to get location</string>
+    <string name="Location_access_denied">Location acccess denied. Please grant location permission.</string>
 
 </resources>
